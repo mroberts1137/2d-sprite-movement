@@ -9,10 +9,10 @@ const CANVAS_HEIGHT = (canvas.height = 600);
 const TICK_SPEED = 1;
 const SPRITE_SCALE = 2;
 
-const numberOfEnemy1 = 5;
-const numberOfEnemy2 = 5;
-const numberOfEnemy3 = 5;
-const numberOfEnemy4 = 5;
+const numberOfEnemy1 = 0;
+const numberOfEnemy2 = 0;
+const numberOfEnemy3 = 0;
+const numberOfEnemy4 = 0;
 let gameFrame = 0;
 
 //////////////////////////////////////////////////////////////////
@@ -192,6 +192,30 @@ for (let i = 0; i < numberOfEnemy3; i++) {
   );
 }
 for (let i = 0; i < numberOfEnemy4; i++) {
+  objects.push(
+    new Wheel(Math.random() * CANVAS_WIDTH, Math.random() * CANVAS_HEIGHT)
+  );
+}
+
+function createBat() {
+  objects.push(
+    new Bat(Math.random() * CANVAS_WIDTH, Math.random() * CANVAS_HEIGHT)
+  );
+}
+
+function createBat2() {
+  objects.push(
+    new Bat2(Math.random() * CANVAS_WIDTH, Math.random() * CANVAS_HEIGHT)
+  );
+}
+
+function createGhost() {
+  objects.push(
+    new Ghost(Math.random() * CANVAS_WIDTH, Math.random() * CANVAS_HEIGHT)
+  );
+}
+
+function createWheel() {
   objects.push(
     new Wheel(Math.random() * CANVAS_WIDTH, Math.random() * CANVAS_HEIGHT)
   );

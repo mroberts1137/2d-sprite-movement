@@ -7,3 +7,12 @@
   height: 600px;
   width: 500px;
 }
+
+.container {
+  position: absolute;
+  width: 75%;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
